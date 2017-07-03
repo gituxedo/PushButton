@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var pushMeButton: UIButton!
+    @IBOutlet weak var countLabel: UILabel!
+    @IBAction func buttonPushed(_ sender: UIButton) {
+        var count:Int = 0
+        count += 1
+        
+    }
 }
 
