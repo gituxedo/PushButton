@@ -35,10 +35,19 @@
                                     <action selector="buttonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9f-KB-g4u"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZR-CQ-Auw">
-                                <rect key="frame" x="157" y="239" width="60" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZR-CQ-Auw">
+                                <rect key="frame" x="137" y="250" width="100" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Oo1-WQ-VdB"/>
+                                    <constraint firstAttribute="width" constant="100" id="Oo1-WQ-VdB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRH-pd-cNV">
+                                <rect key="frame" x="137" y="412" width="100" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wgj-7Z-Kzw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -48,13 +57,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WfS-bU-Aer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dL-5u-g87"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GRH-pd-cNV" secondAttribute="bottom" constant="255" id="4P8-yL-KSq"/>
                             <constraint firstItem="iZR-CQ-Auw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FJU-EH-Cum"/>
                             <constraint firstItem="WfS-bU-Aer" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I3d-vx-N50"/>
-                            <constraint firstItem="iZR-CQ-Auw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="219" id="KCC-Hr-x3m"/>
+                            <constraint firstItem="iZR-CQ-Auw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="KCC-Hr-x3m"/>
+                            <constraint firstItem="GRH-pd-cNV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wlw-6N-HYb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="iZR-CQ-Auw" id="P1k-pV-9dR"/>
+                        <outlet property="fuzzyDuckyLabel" destination="GRH-pd-cNV" id="YiF-7M-Y3D"/>
                         <outlet property="pushMeButton" destination="WfS-bU-Aer" id="NN4-CN-n7O"/>
                     </connections>
                 </viewController>
